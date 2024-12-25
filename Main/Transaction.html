@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Textile Billing System</title>
+    <link rel="stylesheet" href="Transaction.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Textile Billing System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="transactions">
+            <h2>Manage Transactions</h2>
+
+            <!-- Add Transaction Form -->
+            <div class="form-container">
+                <h3>Add Transaction</h3>
+                <form id="transaction-form">
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type" name="transaction-type" required>
+                        <option value="purchase">Purchase</option>
+                        <option value="sales">Sales</option>
+                    </select>
+
+                    <label for="transaction-date">Date:</label>
+                    <input type="date" id="transaction-date" name="transaction-date" required>
+
+                    <label for="transaction-party">Party Name:</label>
+                    <input type="text" id="transaction-party" name="transaction-party" placeholder="Enter party/supplier name" required>
+
+                    <label for="transaction-product">Product Name:</label>
+                    <input type="text" id="transaction-product" name="transaction-product" placeholder="Enter product name" required>
+
+                    <label for="transaction-quantity">Quantity:</label>
+                    <input type="number" id="transaction-quantity" name="transaction-quantity" placeholder="Enter quantity" required>
+
+                    <label for="transaction-price">Price (₹):</label>
+                    <input type="number" id="transaction-price" name="transaction-price" placeholder="Enter price per unit" required>
+
+                    <button type="button" class="btn" onclick="addTransaction()">Add Transaction</button>
+                </form>
+            </div>
+
+            <!-- Transaction Table -->
+            <div class="transaction-table">
+                <h3>Transaction History</h3>
+                <table id="transaction-history">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transaction Type</th>
+                            <th>Party Name</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price (₹)</th>
+                            <th>Total (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Textile Billing System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

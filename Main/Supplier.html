@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Management - Textile Billing System</title>
+    <link rel="stylesheet" href="Supplier.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Textile Billing System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="supplier-management">
+            <h2>Supplier Management</h2>
+
+            <!-- Add New Supplier Form -->
+            <div class="form-container">
+                <h3>Add New Supplier</h3>
+                <form action="Home.html" method="POST" id="add-supplier-form">
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Enter company name" required>
+
+                    <label for="gst-number">GST Number:</label>
+                    <input type="text" id="gst-number" name="gst-number" placeholder="Enter GST number" required>
+
+                    <label for="supplier-address">Address:</label>
+                    <textarea id="supplier-address" name="supplier-address" placeholder="Enter supplier address" required></textarea>
+
+                    <button type="submit" class="btn">Add Supplier</button>
+                </form>
+            </div>
+
+            <!-- Update Existing Supplier Form -->
+            <div class="form-container">
+                <h3>Update Supplier Details</h3>
+                <form action="update-supplier.php" method="POST" id="update-supplier-form">
+                    <label for="update-supplier-id">Supplier ID:</label>
+                    <input type="number" id="update-supplier-id" name="supplier-id" placeholder="Enter supplier ID" required>
+
+                    <label for="update-company-name">Company Name:</label>
+                    <input type="text" id="update-company-name" name="company-name" placeholder="Enter company name">
+
+                    <label for="update-gst-number">GST Number:</label>
+                    <input type="text" id="update-gst-number" name="gst-number" placeholder="Enter GST number">
+
+                    <label for="update-supplier-address">Address:</label>
+                    <textarea id="update-supplier-address" name="supplier-address" placeholder="Enter supplier address"></textarea>
+
+                    <button type="submit" class="btn">Update Supplier</button>
+                </form>
+            </div>
+
+            <!-- View Suppliers Section -->
+            <div class="view-suppliers">
+                <h3>Supplier List</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Supplier ID</th>
+                            <th>Company Name</th>
+                            <th>GST Number</th>
+                            <th>Address</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More suppliers can be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Textile Billing System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports and Analytics - Textile Billing System</title>
+    <link rel="stylesheet" href="Report.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Textile Billing System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reports-analytics">
+            <h2>Reports and Analytics</h2>
+
+            <!-- Sales Reports -->
+            <div class="report-container">
+                <h3>Sales Reports</h3>
+                <canvas id="sales-chart"></canvas>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Total Sales (₹)</th>
+                            <th>Number of Transactions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-12-20</td>
+                            <td>₹50,000</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-21</td>
+                            <td>₹75,000</td>
+                            <td>40</td>
+                        </tr>
+                        <!-- Additional rows can be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Stock Level Reports -->
+            <div class="report-container">
+                <h3>Stock Level Reports</h3>
+                <canvas id="stock-chart"></canvas>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Stock Quantity</th>
+                            <th>Reorder Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>200</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>100</td>
+                            <td>30</td>
+                        </tr>
+                        <!-- Additional rows can be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Customer Purchase History -->
+            <div class="report-container">
+                <h3>Customer Purchase History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Date</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Total (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>2024-12-20</td>
+                            <td>Cotton Fabric</td>
+                            <td>20</td>
+                            <td>₹4,000</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2024-12-21</td>
+                            <td>Silk Fabric</td>
+                            <td>10</td>
+                            <td>₹5,000</td>
+                        </tr>
+                        <!-- Additional rows can be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Textile Billing System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

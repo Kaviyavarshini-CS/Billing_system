@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management - Textile Billing System</title>
+    <link rel="stylesheet" href="Customer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Textile Billing System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="customer-management">
+            <h2>Customer Management</h2>
+
+            <!-- Add New Customer Form -->
+            <div class="form-container">
+                <h3>Add New Customer</h3>
+                <form action="Home.html" method="POST" id="add-customer-form">
+                    <label for="customer-name">Customer Name:</label>
+                    <input type="text" id="customer-name" name="customer-name" placeholder="Enter customer name" required>
+
+                    <label for="customer-email">Email:</label>
+                    <input type="email" id="customer-email" name="customer-email" placeholder="Enter customer email" required>
+
+                    <label for="customer-phone">Phone:</label>
+                    <input type="text" id="customer-phone" name="customer-phone" placeholder="Enter customer phone" required>
+
+                    <label for="customer-address">Address:</label>
+                    <textarea id="customer-address" name="customer-address" placeholder="Enter customer address" required></textarea>
+
+                    <button type="submit" class="btn">Add Customer</button>
+                </form>
+            </div>
+
+            <!-- Update Existing Customer Form (optional; displayed when selecting a customer) -->
+            <div class="form-container">
+                <h3>Update Customer Details</h3>
+                <form action="Home.html" method="POST" id="update-customer-form">
+                    <label for="update-customer-id">Customer ID:</label>
+                    <input type="number" id="update-customer-id" name="customer-id" placeholder="Enter customer ID" required>
+
+                    <label for="update-customer-name">Customer Name:</label>
+                    <input type="text" id="update-customer-name" name="customer-name" placeholder="Enter customer name">
+
+                    <label for="update-customer-email">Email:</label>
+                    <input type="email" id="update-customer-email" name="customer-email" placeholder="Enter customer email">
+
+                    <label for="update-customer-phone">Phone:</label>
+                    <input type="text" id="update-customer-phone" name="customer-phone" placeholder="Enter customer phone">
+
+                    <label for="update-customer-address">Address:</label>
+                    <textarea id="update-customer-address" name="customer-address" placeholder="Enter customer address"></textarea>
+
+                    <button type="submit" class="btn">Update Customer</button>
+                </form>
+            </div>
+
+            <!-- View Customers Section -->
+            <div class="view-customers">
+                <h3>Customer List</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more customers here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Textile Billing System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

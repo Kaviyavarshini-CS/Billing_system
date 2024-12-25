@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management - Textile Billing System</title>
+    <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Textile Billing System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-management">
+            <h2>Product Management</h2>
+
+            <!-- Add New Product Form -->
+            <div class="form-container">
+                <h3>Add New Product</h3>
+                <form action="Home.html" method="POST" id="add-product-form">
+                    <label for="product-type">Product Type:</label>
+                    <input type="text" id="product-type" name="product-type" placeholder="Enter product type " required>
+
+                    <label for="product-quantity">Quantity:</label>
+                    <input type="number" id="product-quantity" name="product-quantity" placeholder="Enter quantity" required>
+
+                    <label for="product-price">Price (₹):</label>
+                    <input type="number" id="product-price" name="product-price" placeholder="Enter price per unit" required>
+
+                    <label for="product-gst">GST (%):</label>
+                    <input type="number" id="product-gst" name="product-gst" placeholder="Enter GST percentage" required>
+
+                    <button type="submit" class="btn">Add Product</button>
+                </form>
+            </div>
+
+            <!-- Update Existing Product Form -->
+            <div class="form-container">
+                <h3>Update Product Details</h3>
+                <form action="Home.html" method="POST" id="update-product-form">
+                    <label for="product-id">Product ID:</label>
+                    <input type="number" id="product-id" name="product-id" placeholder="Enter product ID" required>
+
+                    <label for="update-product-type">Product Type:</label>
+                    <input type="text" id="update-product-type" name="product-type" placeholder="Enter updated product type">
+
+                    <label for="update-product-quantity">Quantity:</label>
+                    <input type="number" id="update-product-quantity" name="product-quantity" placeholder="Enter updated quantity">
+
+                    <label for="update-product-price">Price (₹):</label>
+                    <input type="number" id="update-product-price" name="product-price" placeholder="Enter updated price per unit">
+
+                    <label for="update-product-gst">GST (%):</label>
+                    <input type="number" id="update-product-gst" name="product-gst" placeholder="Enter updated GST percentage">
+
+                    <button type="submit" class="btn">Update Product</button>
+                </form>
+            </div>
+
+            <!-- View Products Section -->
+            <div class="view-products">
+                <h3>Product List</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Type</th>
+                            <th>Quantity</th>
+                            <th>Price (₹)</th>
+                            <th>GST (%)</th>
+                            <th>Total Price (₹)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td>500</td>
+                            <td>200</td>
+                            <td>5</td>
+                            <td>210</td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td>300</td>
+                            <td>500</td>
+                            <td>12</td>
+                            <td>560</td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More products can be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Textile Billing System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and full-page layout */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for centering content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('textile-background.jpg'); /* Change this path to your image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1; /* Makes sure the image is behind content */
+}
+
+/* Content block */
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e55334; /* Darker shade of Tomato */
+}
